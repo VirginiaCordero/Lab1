@@ -4,7 +4,10 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
+		task();
+	}
+
+	public static void task() {
 		// Variables
 		Scanner scanner = new Scanner(System.in);
 		String firstNumber = "";
