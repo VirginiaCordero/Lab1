@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		task();
+		runTask();
 	}
 
-	public static void task() {
+	public static void runTask() {
 		// Variables
 		Scanner scanner = new Scanner(System.in);
 		String firstNumber = "";
@@ -19,8 +19,9 @@ public class Main {
 				"For the next exercise, you will be asked to enter two numbers (one at a time).\n"
 						+ "Please consider that both numbers should:\n"
 						+ "- Be integers (whole numbers, no fractions).\n" + "- Have the same amount of digits.\n"
-						+ 
-						"Let's begin!\n");
+						+ "If each corresponding place in the two numbers (ones, tens, hundreds, …) sums to the same\n"
+						+ "total, your result will return 'true'.\n"
+						+ "If they are not the same total, you will get 'false'.\n" + "Let's begin!\n");
 
 		// First prompt
 		System.out.println("Go ahead, type your first number:");
@@ -62,7 +63,8 @@ public class Main {
 				}
 			}
 
-			System.out.println("" + result);
+			System.out.println("Your result is... *drumroll*\n"
+					+ result + "!!");
 
 		} else {
 			System.out.println("Numbers do not have the same length. Please start over");
